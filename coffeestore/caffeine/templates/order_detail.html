@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Order - Coffee Store{% endblock %}
+
+{% block content %}
+
+  <ul>
+    {% for item in order.orderitem_set.all %}
+      <li>{{ item.product.name }}</li>
+    {% endfor %}
+  </ul>
+  <p>Total Amount: ${{ order.total_amount }}</p>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Orders - Coffee Store{% endblock %}
+
+{% block content %}
+<div class="order-list">
+  <h2>Orders</h2>
+  <a href="{% url 'order-add' %}" class="btn btn-outline-primary">Add New Order</a><br>
+  <ul>
+    {% for order in orders %}
+    <li>Customer - {{order.name}}</li>
+      <ul>
+        {% for product in order.product.all %}
+          <li>{{ product.name }} - ₱{{product.price}}</li>
+
+        {% endfor %}
+      </ul>
+      <a href="{{order.id}}/edit" >Edit</a> |
+      <a href="{{order.id}}/delete" >Delete</a>
+    {% endfor %}
+
+  </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+            "name": "Biscoff",
+            "image_url": "https://i.pinimg.com/564x/7f/ea/cc/7feaccd294c29bec9756c7294a63b8d9.jpg"
+        },
+        {
+            "name": "Flatwhite",
+            "image_url": "https://i.pinimg.com/564x/9d/f1/86/9df186f4d3dd47a607ce435e83164da5.jpg"
+        },
+        {
+            "name": "Matcha",
+            "image_url": "https://i.pinimg.com/564x/07/e6/61/07e661d9c5e58d43b513adf5bacec485.jpg"
+        },
+        {
+            "name": "Javachips",
+            "image_url": "https://i.pinimg.com/564x/2f/54/4f/2f544f59fdc835399da4f1789a3dd2fe.jpg"
+        },
+        {
+            "name": "Caramel Machiatto",
+            "image_url": "https://i.pinimg.com/564x/4d/7a/6f/4d7a6fa6fabd931a57161c7b1bb8f725.jpg"
+        }
+    ]
+}

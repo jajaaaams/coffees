@@ -1,0 +1,334 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: #F5EFE6; /* Light beige background color */
+}
+
+/* Global Styles */
+main {
+    margin: 20px;
+    min-height: 66svh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #5D4037; /* Brown background color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #6D4C41; /* Darker brown hover color */
+}
+
+/* Main Content Styles */
+section.hero {
+    background-color: #795548; /* Dark brown background color */
+    color: #FFF;
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Featured Products */
+section.featured-products {
+    background-color: #D7CCC8; /* Light brown background color */
+    padding: 40px 0;
+}
+
+/* Shop Now Button Styles */
+/* Shop Now Button Styles */
+.btn.shop-now {
+    position: absolute;
+    top: 15px; /* Adjusted top position */
+    right: 20px;
+    background-color: #5D4037; /* Updated button color (a darker brown) */
+    color: #FFF; /* Text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn.shop-now:hover {
+    background-color: #C8AD7F; /* Darker brown hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5D4037; /* Brown background color */
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    color: #333;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border: 2px solid #C19A6B;
+    color: #C19A6B;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #5D4037;
+    color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  li a {
+    color: #C19A6B;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    text-decoration: underline;
+  }
+  
+  ul ul {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  /* style.css */
+
+/* style.css */
+
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fff; /* Blue color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #5D4037; /* Darker Blue on hover */
+  }
+  
+  /* Style the Featured Products section */
+.featured-products {
+  margin: 2rem;
+
+}
+
+.featured-products h2.title {
+  padding-left: 2rem;
+}
+
+.product-box {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+  display: flex;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-name {
+  margin-left: 20px;
+}
+
+.sbs {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .product-box {
+    padding: 10px;
+  }
+
+  .product-name {
+    margin-left: 10px;
+  }
+}
+
+
+.product-image img {
+  width: 100%;
+  min-width: 200px; /* Set your desired width */
+  height: 200px; /* Set your desired height */
+  border-radius: 5px;
+ }
+/* ... (remaining styles) ... */
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    margin-right: 5px;
+  }
+  
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    color: #C19A6B;
+    background-color: #fff;
+  }
+  
+  .page-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Adjusted selectors to accommodate classes with spaces */
+  .page-item.disabled {
+    /* Styles for disabled pagination item */
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+  
+  .page-item.active {
+    /* Styles for active pagination item */
+    color: #fff;
+    background-color: #C19A6B;
+    border-color: #007bff;
+    z-index: 3;
+  }
+
+  /* Style the Orders section */
+.order-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-list h2 {
+  color: #333;
+}
+
+.order-list ul {
+  list-style-type: none;
+}
+
+.order-list li {
+  margin-bottom: 10px;
+}
+
+/* Style the Add New Order button */
+.order-list .btn {
+  display: inline-block;
+  background-color: #C19A6B;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style the Edit and Delete links */
+.order-list a {
+  text-decoration: none;
+  color: #C19A6B;
+  margin-left: 10px;
+}

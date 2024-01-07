@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %} Home - Coffee Store {% endblock %}
+
+{% block content %}
+  <!-- Order Now Button (Top Right) -->
+  <a href="{% url 'order_list' %}" class="btn shop-now">Order Now</a>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Coffee-holic!</h1>
+    <p>Explore our premium coffee blends, carefully curated for coffee enthusiasts like you.</p>
+  </section>
+<br/>
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <h2 class="title">Featured Products</h2>
+    {% for product in products %}
+    <div class="product-box">
+        <div class="product">
+                <div class="product-image">
+                    {% for item in product_data %}
+                        {% if product.name == item.name %}
+                            <img src="{{ item.image_url }}" alt="{{ product.name }} Image">
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="product-name">
+                    <h2 class="sbs">{{ product.name}}</h2>
+                    <hr />
+                    <p>Description 
+                      <br>
+                      {{product.description}}
+                      <br>
+                      Price - ₱{{product.price}}
+                    </p>
+                </div>
+        </div>
+    </div>
+{% endfor %}
+    <!-- Add your featured product products or images here -->
+  </section>
+  <div>{% include 'includes/pagination.html'%}</div>
+{% endblock %}
